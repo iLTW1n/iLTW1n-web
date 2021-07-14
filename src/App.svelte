@@ -1,8 +1,6 @@
 <script>
-	import Home from './pages/home.svelte';
-	import About from './pages/about.svelte';
-
-	export let url = '';
+	import { Router } from '@roxi/routify';
+	import { routes } from '../.routify/routes';
 </script>
 
-<div>dasdasdas</div>
+<Router {routes} />
