@@ -1,6 +1,6 @@
 <script>
 	export let title;
-	export let showAll;
+	export let showAll = false;
 </script>
 
 <div class='component-section'>
@@ -8,7 +8,10 @@
 		<div class='component-section__header'>
 			<h3>{ title }</h3>
 			{ #if showAll }
-				<div>Todo los proyectos</div>
+				<div>
+					Todo los proyectos
+					<img src='/assets/arrow-right.svg' alt='arrow-right' />
+				</div>
 			{ /if }
 		</div>
 		<slot />
@@ -47,6 +50,15 @@
 				font-size: 16px;
 				line-height: 24px;
 				cursor: pointer;
+				display: flex;
+				align-items: center;
+
+				img {
+					margin-left: 8px;
+					width: 18px;
+					min-width: 18px;
+					height: 18px;
+				}
 			}
 		}
 	}
