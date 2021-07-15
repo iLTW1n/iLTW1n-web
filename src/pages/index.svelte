@@ -1,21 +1,16 @@
 <script>
+	import Hero from '../components/hero.svelte';
+	import Section from '../components/section.svelte';
+	import CardProject from '../components/card-project.svelte';
 </script>
 
-<div>
-	<div class="dasdas">
-		dsadsa
-	</div>
-	<div class="saaaaa">
-		aaaa
-	</div>
-</div>
+<Hero />
+<Section title='Artículos'>
+	BODY
+</Section>
+<Section title='Proyectos' showAll>
+	<CardProject />
+</Section>
 
-<style>
-	.dasdas {
-		border: 1px solid red;
-	}
-
-	.saaaaa {
-		border: 1px solid blue;
-	}
+<style lang='scss'>
 </style>
