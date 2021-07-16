@@ -7,7 +7,9 @@
 
 <Hero />
 <Section title='Artículos'>
-	BODY
+	<div class='page-home__articles'>
+		Pronto ...
+	</div>
 </Section>
 <Section title='Proyectos' showAll>
 	<div class='page-home__projects'>
@@ -21,6 +23,13 @@
 
 <style lang='scss'>
 	.page-home {
+		&__articles {
+			color: var(--color-blue-50);
+			font-weight: var(--font-weight-normal);
+			font-size: 18px;
+			line-height: 32px;
+		}
+
 		&__projects {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);

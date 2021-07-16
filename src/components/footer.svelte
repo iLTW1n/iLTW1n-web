@@ -1,21 +1,28 @@
+<script>
+	import LazyImage from './lazy-image.svelte';
+</script>
+
 <div class='component-header'>
 	<div class='component-header__content'>
 		<div class='component-header__left'>
 			<p>Desarrollado por José Oscátegui.</p>
-			<p>Built with <span>Svelte <img src='/assets/dev-svelte.svg' alt='svelte' /></span>. Hosted on <span>Netlify <img src='/assets/dev-netlify.svg' alt='netlify' /></span>.</p>
+			<p>
+				Built with <span>Svelte <LazyImage image='/assets/dev-svelte.svg' name='svelte' width='16px' height='16px' /></span>.
+				Hosted on <span>Netlify <LazyImage image='/assets/dev-netlify.svg' name='netlify' width='16px' height='16px' /></span>.
+			</p>
 		</div>
 		<div class='component-header__right'>
 			<a href=''>
-				<img src='/assets/dev-github.svg' alt='github' />
+				<LazyImage image='/assets/dev-github.svg' name='github' width='24px' height='24px' />
 			</a>
 			<a href=''>
-				<img src='/assets/dev-codersrank.svg' alt='codersrank' />
+				<LazyImage image='/assets/dev-codersrank.svg' name='codersrank' width='24px' height='24px' />
 			</a>
 			<a href=''>
-				<img src='/assets/dev-linkedin.svg' alt='linkedin' />
+				<LazyImage image='/assets/dev-linkedin.svg' name='linkedin' width='24px' height='24px' />
 			</a>
 			<a href=''>
-				<img src='/assets/dev-instagram.svg' alt='instagram' />
+				<LazyImage image='/assets/dev-instagram.svg' name='instagram' width='24px' height='24px' />
 			</a>
 		</div>
 	</div>
@@ -43,12 +50,13 @@
 				span {
 					color: var(--color-white-10);
 
-					img {
+					/*img,
+					:global(.image) {
 						width: 16px;
 						min-width: 16px;
 						height: 16px;
 						margin-bottom: -3px;
-					}
+					}*/
 				}
 			}
 		}

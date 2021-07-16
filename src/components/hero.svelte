@@ -40,15 +40,15 @@
 
 		&__description {
 			color: var(--color-white-10);
-			font-weight: var(--font-weight-normal);
-			margin-bottom: 8px;
+			font-weight: var(--font-weight-light);
 			font-size: 18px;
 			line-height: 32px;
+			margin-bottom: 16px;
 		}
 
 		&__go-to-about {
 			color: var(--color-white-10);
-			font-weight: var(--font-weight-normal);
+			font-weight: var(--font-weight-light);
 			font-size: 18px;
 			line-height: 32px;
 
