@@ -28,6 +28,7 @@
 <img
 	alt={name}
 	class={$$props.class}
+	style='object-fit: contain;'
 	width={width}
 	height={height}
 	src=''

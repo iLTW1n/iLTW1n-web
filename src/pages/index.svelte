@@ -25,7 +25,7 @@
 	.page-home {
 		&__articles {
 			color: var(--color-blue-50);
-			font-weight: var(--font-weight-normal);
+			font-weight: var(--font-weight-light);
 			font-size: 18px;
 			line-height: 32px;
 		}

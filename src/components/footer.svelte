@@ -12,16 +12,16 @@
 			</p>
 		</div>
 		<div class='component-header__right'>
-			<a href=''>
+			<a href='https://github.com/iLTW1n' target='_blank'>
 				<LazyImage image='/assets/dev-github.svg' name='github' width='24px' height='24px' />
 			</a>
-			<a href=''>
+			<a href='https://profile.codersrank.io/user/iltw1n' target='_blank'>
 				<LazyImage image='/assets/dev-codersrank.svg' name='codersrank' width='24px' height='24px' />
 			</a>
-			<a href=''>
+			<a href='https://www.linkedin.com/in/jose-oscategui/' target='_blank'>
 				<LazyImage image='/assets/dev-linkedin.svg' name='linkedin' width='24px' height='24px' />
 			</a>
-			<a href=''>
+			<a href='https://www.instagram.com/jfoscategui' target='_blank'>
 				<LazyImage image='/assets/dev-instagram.svg' name='instagram' width='24px' height='24px' />
 			</a>
 		</div>
@@ -49,14 +49,6 @@
 
 				span {
 					color: var(--color-white-10);
-
-					/*img,
-					:global(.image) {
-						width: 16px;
-						min-width: 16px;
-						height: 16px;
-						margin-bottom: -3px;
-					}*/
 				}
 			}
 		}
