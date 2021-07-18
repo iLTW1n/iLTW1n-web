@@ -7,8 +7,8 @@
 		<div class='component-header__left'>
 			<p>Desarrollado por José Oscátegui.</p>
 			<p>
-				Built with <span>Svelte <LazyImage image='/assets/dev-svelte.svg' name='svelte' width='16px' height='16px' /></span>.
-				Hosted on <span>Netlify <LazyImage image='/assets/dev-netlify.svg' name='netlify' width='16px' height='16px' /></span>.
+				Construido con <span>Svelte <LazyImage image='/assets/dev-svelte.svg' name='svelte' width='16px' height='16px' /></span>.
+				Alojado en <span>Netlify <LazyImage image='/assets/dev-netlify.svg' name='netlify' width='16px' height='16px' /></span>.
 			</p>
 		</div>
 		<div class='component-header__right'>

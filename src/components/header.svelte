@@ -88,6 +88,7 @@
 		}
 
 		&__left {
+			user-select: none;
 			font-size: 18px;
 			font-weight: var(--font-weight-bold);
 			color: var(--color-white-10);

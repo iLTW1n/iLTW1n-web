@@ -3,54 +3,62 @@
 	import Section from '../components/section.svelte';
 
 	const practicing = [
-		{ name: 'svelte', image: 'front/dev-svelte.svg' },
-		{ name: 'python', image: 'back/dev-python.svg' },
+		{ name: 'svelte', image: 'front/dev-svelte.svg', url: 'https://svelte.dev/' },
+		{ name: 'python', image: 'back/dev-python.svg', url: 'https://www.python.org/' },
 	]
 	const controls = [
-		{ name: 'dev-git', image: 'dev-git.svg' },
+		{ name: 'dev-git', image: 'dev-git.svg', url: 'https://git-scm.com/' },
 	]
 	const frontends = [
-		{ name: 'html5', image: 'dev-html5.svg' },
-		{ name: 'css', image: 'dev-css.svg' },
-		{ name: 'pug', image: 'dev-pug.svg' },
-		{ name: 'sass', image: 'dev-sass.svg' },
-		{ name: 'less', image: 'dev-less.svg' },
-		{ name: 'styled-components', image: 'dev-styled-components.svg' },
-		{ name: 'bootstrap', image: 'dev-bootstrap.svg' },
-		{ name: 'bulma', image: 'dev-bulma.svg' },
-		{ name: 'materialize', image: 'dev-materialize.svg' },
-		{ name: 'javascript', image: 'dev-javascript.svg' },
-		{ name: 'typescript', image: 'dev-typescript.svg' },
-		{ name: 'react', image: 'dev-react.svg' },
-		{ name: 'next', image: 'dev-next.svg' },
-		{ name: 'redux', image: 'dev-redux.svg' },
-		{ name: 'redux-saga', image: 'dev-redux-saga.svg' },
-		{ name: 'gatsby', image: 'dev-gatsby.svg' },
-		{ name: 'vue', image: 'dev-vue.svg' },
-		{ name: 'angular', image: 'dev-angular.svg' },
-		{ name: 'svelte', image: 'dev-svelte.svg', now: true },
-		{ name: 'jest', image: 'dev-jest.svg' }
+		{ name: 'html5', image: 'dev-html5.svg', url: 'https://developer.mozilla.org/es/docs/Web/HTML' },
+		{ name: 'css', image: 'dev-css.svg', url: 'https://developer.mozilla.org/es/docs/Web/CSS' },
+		{ name: 'pug', image: 'dev-pug.svg', url: 'https://pugjs.org/api/getting-started.html' },
+		{ name: 'sass', image: 'dev-sass.svg', url: 'https://sass-lang.com/' },
+		{ name: 'less', image: 'dev-less.svg', url: 'https://lesscss.org/' },
+		{ name: 'styled-components', image: 'dev-styled-components.svg', url: 'https://styled-components.com/' },
+		{ name: 'bootstrap', image: 'dev-bootstrap.svg', url: 'https://getbootstrap.com/' },
+		{ name: 'ant-design', image: 'dev-ant-design.svg', url: 'https://ant.design/' },
+		// { name: 'bulma', image: 'dev-bulma.svg', url: 'https://bulma.io/' },
+		{ name: 'materialize', image: 'dev-materialize.svg', url: 'https://materializecss.com/' },
+		{ name: 'javascript', image: 'dev-javascript.svg', url: 'https://developer.mozilla.org/es/docs/Web/JavaScript' },
+		{ name: 'typescript', image: 'dev-typescript.svg', url: 'https://www.typescriptlang.org/' },
+		{ name: 'react', image: 'dev-react.svg', url: 'https://reactjs.org/' },
+		{ name: 'next', image: 'dev-next.svg', url: 'https://nextjs.org/' },
+		{ name: 'redux', image: 'dev-redux.svg', url: 'https://redux.js.org/' },
+		{ name: 'redux-saga', image: 'dev-redux-saga.svg', url: 'https://redux-saga.js.org/' },
+		{ name: 'gatsby', image: 'dev-gatsby.svg', url: 'https://www.gatsbyjs.com/' },
+		{ name: 'vue', image: 'dev-vue.svg', url: 'https://vuejs.org/' },
+		{ name: 'angular', image: 'dev-angular.svg', url: 'https://angular.io/' },
+		{ name: 'svelte', image: 'dev-svelte.svg', now: true, url: 'https://svelte.dev/' },
+		{ name: 'jest', image: 'dev-jest.svg', url: 'https://jestjs.io/' }
 	];
 	const backends = [
-		{ name: 'nodejs', image: 'dev-nodejs.svg' },
-		{ name: 'express', image: 'dev-express.svg' },
-		{ name: 'apollo', image: 'dev-apollo.svg' },
-		{ name: 'graphql', image: 'dev-graphql.svg' },
-		{ name: 'firebase', image: 'dev-firebase.svg' },
-		{ name: 'python', image: 'dev-python.svg', now: true },
+		{ name: 'nodejs', image: 'dev-nodejs.svg', url: 'https://nodejs.org' },
+		{ name: 'express', image: 'dev-express.svg', url: 'https://expressjs.com' },
+		{ name: 'apollo', image: 'dev-apollo.svg', url: 'https://www.apollographql.com/docs/apollo-server/' },
+		{ name: 'graphql', image: 'dev-graphql.svg', url: 'https://graphql.org/' },
+		{ name: 'firebase', image: 'dev-firebase.svg', url: 'https://firebase.google.com/' },
+		{ name: 'python', image: 'dev-python.svg', now: true, url: 'https://www.python.org/' },
 	]
 	const dbs = [
-		{ name: 'mysql', image: 'dev-mysql.svg' },
-		{ name: 'postgresql', image: 'dev-postgresql.svg' },
+		{ name: 'mysql', image: 'dev-mysql.svg', url: 'https://www.mysql.com/' },
+		{ name: 'postgresql', image: 'dev-postgresql.svg', url: 'https://www.postgresql.org/' },
 	]
 	const repos = [
-		{ name: 'github', image: 'dev-github.svg' },
-		{ name: 'gitlab', image: 'dev-gitlab.svg' },
-		{ name: 'bitbucket', image: 'dev-bitbucket.svg' },
+		{ name: 'github', image: 'dev-github.svg', url: 'https://github.com/' },
+		{ name: 'gitlab', image: 'dev-gitlab.svg', url: 'https://gitlab.com/' },
+		{ name: 'bitbucket', image: 'dev-bitbucket.svg', url: 'https://bitbucket.org/' },
 	]
 	const clouds = [
-		{ name: 'netlify', image: 'dev-netlify.svg' },
-		{ name: 'heroku', image: 'dev-heroku.svg' },
+		{ name: 'netlify', image: 'dev-netlify.svg', url: 'https://www.netlify.com/' },
+		{ name: 'heroku', image: 'dev-heroku.svg', url: 'https://www.heroku.com/' },
+		{ name: 'vercel', image: 'dev-vercel.svg', url: 'https://vercel.com/' },
+	]
+	const designs = [
+		{ name: 'figma', image: 'dev-figma.svg', url: 'https://www.figma.com/' },
+		{ name: 'zeplin', image: 'dev-zeplin.svg', url: 'https://zeplin.io/' },
+		{ name: 'invision', image: 'dev-invision.svg', url: 'https://www.invisionapp.com/' },
+		{ name: 'avocode', image: 'dev-avocode.svg', url: 'https://avocode.com/' },
 	]
 </script>
 
@@ -79,70 +87,112 @@
 
 <Section title='Ahora' description='practicando'>
 	<div class='component-about__list-dev'>
-		{#each practicing as { name, image }}
-			<div class='component-about__list-dev__item'>
+		{#each practicing as { name, image, url }}
+			<a
+				href={url}
+				target='_blank'
+				class='component-about__list-dev__item'
+			>
 				<LazyImage image='/assets/{image}' name={name} width='56px' />
-			</div>
+			</a>
 		{/each}
 	</div>
 </Section>
 
 <Section title='Control de Versiones'>
 	<div class='component-about__list-dev'>
-		{#each controls as { name, image }}
-			<div class='component-about__list-dev__item'>
+		{#each controls as { name, image, url }}
+			<a
+				href={url}
+				target='_blank'
+				class='component-about__list-dev__item'
+			>
 				<LazyImage image='/assets/control/{image}' name={name} width='56px' />
-			</div>
+			</a>
 		{/each}
 	</div>
 </Section>
 
 <Section title='Frontend'>
 	<div class='component-about__list-dev'>
-		{#each frontends as { name, image, now }}
-			<div class='component-about__list-dev__item {now ? "now" : ""}'>
+		{#each frontends as { name, image, now, url }}
+			<a
+				href={url}
+				target='_blank'
+				class='component-about__list-dev__item {now ? "now" : ""}'
+			>
 				<LazyImage image='/assets/front/{image}' name={name} width='56px' />
-			</div>
+			</a>
 		{/each}
 	</div>
 </Section>
 
 <Section title='Backend'>
 	<div class='component-about__list-dev'>
-		{#each backends as { name, image, now }}
-			<div class='component-about__list-dev__item {now ? "now" : ""}'>
+		{#each backends as { name, image, now, url }}
+			<a
+				href={url}
+				target='_blank'
+				class='component-about__list-dev__item {now ? "now" : ""}'
+			>
 				<LazyImage image='/assets/back/{image}' name={name} width='56px' />
-			</div>
+			</a>
 		{/each}
 	</div>
 </Section>
 
 <Section title='Base de Datos'>
 	<div class='component-about__list-dev'>
-		{#each dbs as { name, image }}
-			<div class='component-about__list-dev__item'>
+		{#each dbs as { name, image, url }}
+			<a
+				href={url}
+				target='_blank'
+				class='component-about__list-dev__item'
+			>
 				<LazyImage image='/assets/db/{image}' name={name} width='56px' />
-			</div>
+			</a>
 		{/each}
 	</div>
 </Section>
 
 <Section title='Alojamiento de Repositorios'>
 	<div class='component-about__list-dev'>
-		{#each repos as { name, image }}
-			<div class='component-about__list-dev__item'>
+		{#each repos as { name, image, url }}
+			<a
+				href={url}
+				target='_blank'
+				class='component-about__list-dev__item'
+			>
 				<LazyImage image='/assets/repo/{image}' name={name} width='56px' />
-			</div>
+			</a>
 		{/each}
 	</div>
 </Section>
 
 <Section title='Computación en la Nube'>
 	<div class='component-about__list-dev'>
-		{#each clouds as { name, image }}
-			<div class='component-about__list-dev__item'>
+		{#each clouds as { name, image, url }}
+			<a
+				href={url}
+				target='_blank'
+				class='component-about__list-dev__item'
+			>
 				<LazyImage image='/assets/cloud/{image}' name={name} width='56px' />
-			</div>
+			</a>
+		{/each}
+	</div>
+</Section>
+
+<Section title='Diseño a Código'>
+	<div class='component-about__list-dev'>
+		{#each designs as { name, image, url }}
+			<a
+				href={url}
+				target='_blank'
+				class='component-about__list-dev__item'
+			>
+				<LazyImage image='/assets/design/{image}' name={name} width='56px' />
+			</a>
 		{/each}
 	</div>
 </Section>
@@ -180,6 +230,7 @@
 		}
 
 		&__list-dev {
+			user-select: none;
 			display: grid;
 			grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
 			grid-gap: 24px;
@@ -192,6 +243,7 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				text-decoration: none;
 
 				&.now {
 					opacity: .4;

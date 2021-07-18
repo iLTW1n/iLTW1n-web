@@ -1,3 +1,7 @@
+<script>
+	import { url } from '@roxi/routify';
+</script>
+
 <div class='component-hero'>
 	<div class='component-hero__content'>
 		<div class='component-hero__main'>
@@ -12,7 +16,7 @@
 		</p>
 
 		<p class='component-hero__go-to-about'>
-			Puedes leer más <span>sobre mí</span>.
+			Puedes leer más <a href={$url('./sobre-mi')}>sobre mí</a>.
 		</p>
 	</div>
 </div>
@@ -52,7 +56,8 @@
 			font-size: 18px;
 			line-height: 32px;
 
-			span {
+			a {
+				text-decoration: none;
 				cursor: pointer;
 				color: var(--primary-color);
 				position: relative;
