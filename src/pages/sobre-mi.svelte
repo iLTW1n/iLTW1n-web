@@ -62,12 +62,12 @@
 	]
 </script>
 
-<div class='component-about'>
-	<div class='component-about__content'>
+<div class='page-about'>
+	<div class='page-about__content'>
 		<h1>Sobre mi</h1>
-		<div class='component-about__description'>
+		<div class='page-about__description'>
 			<p>
-				Soy un Desarrollador web Frontend con más de 5 años de experiencia. Me apasionan los <br />
+				Soy un Desarrollador web Frontend con más de 4 años de experiencia. Me apasionan los <br />
 				códigos de calidad, las mejores practicas, la seguridad y el rendimiento.
 			</p>
 			<p>
@@ -86,12 +86,12 @@
 </div>
 
 <Section title='Ahora' description='practicando'>
-	<div class='component-about__list-dev'>
+	<div class='page-about__list-dev'>
 		{#each practicing as { name, image, url }}
 			<a
 				href={url}
 				target='_blank'
-				class='component-about__list-dev__item'
+				class='page-about__list-dev__item'
 			>
 				<LazyImage image='/assets/{image}' name={name} width='56px' />
 			</a>
@@ -100,12 +100,12 @@
 </Section>
 
 <Section title='Control de Versiones'>
-	<div class='component-about__list-dev'>
+	<div class='page-about__list-dev'>
 		{#each controls as { name, image, url }}
 			<a
 				href={url}
 				target='_blank'
-				class='component-about__list-dev__item'
+				class='page-about__list-dev__item'
 			>
 				<LazyImage image='/assets/control/{image}' name={name} width='56px' />
 			</a>
@@ -114,12 +114,12 @@
 </Section>
 
 <Section title='Frontend'>
-	<div class='component-about__list-dev'>
+	<div class='page-about__list-dev'>
 		{#each frontends as { name, image, now, url }}
 			<a
 				href={url}
 				target='_blank'
-				class='component-about__list-dev__item {now ? "now" : ""}'
+				class='page-about__list-dev__item {now ? "now" : ""}'
 			>
 				<LazyImage image='/assets/front/{image}' name={name} width='56px' />
 			</a>
@@ -128,12 +128,12 @@
 </Section>
 
 <Section title='Backend'>
-	<div class='component-about__list-dev'>
+	<div class='page-about__list-dev'>
 		{#each backends as { name, image, now, url }}
 			<a
 				href={url}
 				target='_blank'
-				class='component-about__list-dev__item {now ? "now" : ""}'
+				class='page-about__list-dev__item {now ? "now" : ""}'
 			>
 				<LazyImage image='/assets/back/{image}' name={name} width='56px' />
 			</a>
@@ -142,12 +142,12 @@
 </Section>
 
 <Section title='Base de Datos'>
-	<div class='component-about__list-dev'>
+	<div class='page-about__list-dev'>
 		{#each dbs as { name, image, url }}
 			<a
 				href={url}
 				target='_blank'
-				class='component-about__list-dev__item'
+				class='page-about__list-dev__item'
 			>
 				<LazyImage image='/assets/db/{image}' name={name} width='56px' />
 			</a>
@@ -156,12 +156,12 @@
 </Section>
 
 <Section title='Alojamiento de Repositorios'>
-	<div class='component-about__list-dev'>
+	<div class='page-about__list-dev'>
 		{#each repos as { name, image, url }}
 			<a
 				href={url}
 				target='_blank'
-				class='component-about__list-dev__item'
+				class='page-about__list-dev__item'
 			>
 				<LazyImage image='/assets/repo/{image}' name={name} width='56px' />
 			</a>
@@ -170,12 +170,12 @@
 </Section>
 
 <Section title='Computación en la Nube'>
-	<div class='component-about__list-dev'>
+	<div class='page-about__list-dev'>
 		{#each clouds as { name, image, url }}
 			<a
 				href={url}
 				target='_blank'
-				class='component-about__list-dev__item'
+				class='page-about__list-dev__item'
 			>
 				<LazyImage image='/assets/cloud/{image}' name={name} width='56px' />
 			</a>
@@ -184,12 +184,12 @@
 </Section>
 
 <Section title='Diseño a Código'>
-	<div class='component-about__list-dev'>
+	<div class='page-about__list-dev'>
 		{#each designs as { name, image, url }}
 			<a
 				href={url}
 				target='_blank'
-				class='component-about__list-dev__item'
+				class='page-about__list-dev__item'
 			>
 				<LazyImage image='/assets/design/{image}' name={name} width='56px' />
 			</a>
@@ -198,7 +198,7 @@
 </Section>
 
 <style lang='scss'>
-	.component-about {
+	.page-about {
 		margin-top: 7rem;
 		padding: 0 24px;
 
