@@ -3,6 +3,7 @@
 	import Section from '../components/section.svelte';
 	import CardProject from '../components/card-project.svelte';
 	import WorkTogether from '../components/work-together.svelte';
+	import projects from '../api/projects';
 </script>
 
 <Hero />
@@ -13,10 +14,9 @@
 </Section>
 <Section title='Proyectos' showAll>
 	<div class='page-home__projects'>
-		<CardProject />
-		<CardProject />
-		<CardProject />
-		<CardProject />
+		{ #each projects.slice(0, 5) as project }
+			<CardProject { ...project } />
+		{ /each }
 	</div>
 </Section>
 <WorkTogether />

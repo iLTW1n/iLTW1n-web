@@ -1,17 +1,23 @@
+<script>
+	export let name = '';
+	export let description = '';
+	export let topics = [];
+	export let github = '';
+	export let project = '';
+
+</script>
+
 <div class='component-project-card'>
 	<div class='component-project-card__title'>
-		Inspirate
+		{ name }
 	</div>
 	<div class='component-project-card__description'>
-		A website where you can find phrases, you can give love and share.
+		{ description }
 	</div>
 	<div class='component-project-card__tags'>
-		<span>React</span>
-		<span>Redux</span>
-		<span>Node.js</span>
-		<span>Tailwind CSS</span>
-		<span>Typescript</span>
-		<span>Svelte</span>
+		{ #each topics as topic }
+			<span>{ topic }</span>
+		{ /each }
 	</div>
 	<div class='component-project-card__links'>
 		<div>
