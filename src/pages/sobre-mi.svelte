@@ -2,10 +2,6 @@
 	import LazyImage from '../components/lazy-image.svelte';
 	import Section from '../components/section.svelte';
 
-	const practicing = [
-		{ name: 'svelte', image: 'front/dev-svelte.svg', url: 'https://svelte.dev/' },
-		{ name: 'python', image: 'back/dev-python.svg', url: 'https://www.python.org/' },
-	]
 	const controls = [
 		{ name: 'dev-git', image: 'dev-git.svg', url: 'https://git-scm.com/' },
 	]
@@ -33,16 +29,16 @@
 		{ name: 'jest', image: 'dev-jest.svg', url: 'https://jestjs.io/' }
 	];
 	const backends = [
-		{ name: 'nodejs', image: 'dev-nodejs.svg', url: 'https://nodejs.org' },
-		{ name: 'express', image: 'dev-express.svg', url: 'https://expressjs.com' },
-		{ name: 'apollo', image: 'dev-apollo.svg', url: 'https://www.apollographql.com/docs/apollo-server/' },
-		{ name: 'graphql', image: 'dev-graphql.svg', url: 'https://graphql.org/' },
-		{ name: 'firebase', image: 'dev-firebase.svg', url: 'https://firebase.google.com/' },
+		{ name: 'nodejs', image: 'dev-nodejs.svg', now: true, url: 'https://nodejs.org' },
+		{ name: 'express', image: 'dev-express.svg', now: true, url: 'https://expressjs.com' },
+		{ name: 'apollo', image: 'dev-apollo.svg', now: true, url: 'https://www.apollographql.com/docs/apollo-server/' },
+		{ name: 'graphql', image: 'dev-graphql.svg', now: true, url: 'https://graphql.org/' },
+		{ name: 'firebase', image: 'dev-firebase.svg', now: true, url: 'https://firebase.google.com/' },
 		{ name: 'python', image: 'dev-python.svg', now: true, url: 'https://www.python.org/' },
 	]
 	const dbs = [
-		{ name: 'mysql', image: 'dev-mysql.svg', url: 'https://www.mysql.com/' },
-		{ name: 'postgresql', image: 'dev-postgresql.svg', url: 'https://www.postgresql.org/' },
+		{ name: 'mysql', image: 'dev-mysql.svg', now: true, url: 'https://www.mysql.com/' },
+		{ name: 'postgresql', image: 'dev-postgresql.svg', now: true, url: 'https://www.postgresql.org/' },
 	]
 	const repos = [
 		{ name: 'github', image: 'dev-github.svg', url: 'https://github.com/' },
@@ -84,20 +80,6 @@
 		</div>
 	</div>
 </div>
-
-<Section title='Ahora' description='practicando'>
-	<div class='page-about__list-dev'>
-		{#each practicing as { name, image, url }}
-			<a
-				href={url}
-				target='_blank'
-				class='page-about__list-dev__item'
-			>
-				<LazyImage image='/assets/{image}' name={name} width='56px' />
-			</a>
-		{/each}
-	</div>
-</Section>
 
 <Section title='Control de Versiones'>
 	<div class='page-about__list-dev'>
@@ -246,7 +228,7 @@
 				text-decoration: none;
 
 				&.now {
-					opacity: .4;
+					opacity: .6;
 				}
 			}
 		}
