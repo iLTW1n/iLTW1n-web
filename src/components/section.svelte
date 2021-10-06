@@ -6,6 +6,7 @@
 	export let showAll = false;
 
 	function goToAllProjects() {
+		console.log('here');
 		$goto('/proyectos')
 	}
 </script>
