@@ -38,6 +38,8 @@
 		position: relative;
 		overflow: hidden;
 		background-color: var(--color-blue-20);
+		display: flex;
+		flex-direction: column;
 
 		&:before {
 			content: '';
@@ -81,6 +83,7 @@
 
 		&__links {
 			display: flex;
+			margin-top: auto;
 
 			div {
 				margin-right: 16px;

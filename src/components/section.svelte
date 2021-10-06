@@ -1,7 +1,13 @@
 <script>
+	import { goto } from '@roxi/routify';
+
 	export let title;
 	export let description = '';
 	export let showAll = false;
+
+	function goToAllProjects() {
+		$goto('/proyectos')
+	}
 </script>
 
 <div class='component-section'>
@@ -14,7 +20,7 @@
 				{ /if }
 			</div>
 			{ #if showAll }
-				<div class='component-section__all-content'>
+				<div class='component-section__all-content' on:click={goToAllProjects}>
 					Todo los proyectos
 					<img src='/assets/arrow-right.svg' alt='arrow-right' />
 				</div>

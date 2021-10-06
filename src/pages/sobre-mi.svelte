@@ -33,7 +33,7 @@
 		{ name: 'express', image: 'dev-express.svg', now: true, url: 'https://expressjs.com' },
 		{ name: 'apollo', image: 'dev-apollo.svg', now: true, url: 'https://www.apollographql.com/docs/apollo-server/' },
 		{ name: 'graphql', image: 'dev-graphql.svg', now: true, url: 'https://graphql.org/' },
-		{ name: 'firebase', image: 'dev-firebase.svg', now: true, url: 'https://firebase.google.com/' },
+		{ name: 'firebase', image: 'dev-firebase.svg', url: 'https://firebase.google.com/' },
 		{ name: 'python', image: 'dev-python.svg', now: true, url: 'https://www.python.org/' },
 	]
 	const dbs = [
@@ -125,11 +125,11 @@
 
 <Section title='Base de Datos'>
 	<div class='page-about__list-dev'>
-		{#each dbs as { name, image, url }}
+		{#each dbs as { name, image, url, now }}
 			<a
 				href={url}
 				target='_blank'
-				class='page-about__list-dev__item'
+				class='page-about__list-dev__item {now ? "now" : ""}'
 			>
 				<LazyImage image='/assets/db/{image}' name={name} width='56px' />
 			</a>
