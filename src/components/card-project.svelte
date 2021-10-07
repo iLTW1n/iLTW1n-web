@@ -1,9 +1,15 @@
 <script>
+	import { goto } from '@roxi/routify';
+
 	export let name = '';
 	export let description = '';
 	export let topics = [];
 	export let github = '';
 	export let project = '';
+
+	function gotToGithub() {
+		window.open(github, '_blank')
+	}
 
 </script>
 
@@ -20,14 +26,16 @@
 		{ /each }
 	</div>
 	<div class='component-project-card__links'>
-		<div>
+		<div on:click={gotToGithub}>
 			<img src='/assets/code.svg' alt='code' />
 			<span>Ver en GitHub</span>
 		</div>
-		<div>
-			<img src='/assets/url.svg' alt='url' />
-			<span>Ver Proyecto</span>
-		</div>
+		{ #if project }
+			<div>
+				<img src='/assets/url.svg' alt='url' />
+				<span>Ver Proyecto</span>
+			</div>
+		{ /if }
 	</div>
 </div>
 

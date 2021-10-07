@@ -1,3 +1,9 @@
+<script>
+	function goToEmail() {
+		window.location.href = 'mailto:jose.osk01@gmail.com';
+	}
+</script>
+
 <div class='component-work-together'>
 	<h2 class='component-work-together__title'>
 		¿En que estas trabajando?
@@ -6,7 +12,7 @@
 		Si quieres trabajar conmigo, solo envíame un correo <br />
 		electrónico y estaré listo para hacerlo realidad.
 	</p>
-	<div class='component-work-together__chat'>
+	<div class='component-work-together__chat' on:click={goToEmail}>
 		<img src='/assets/chat.svg' alt='chat' />
 		Chat
 	</div>
