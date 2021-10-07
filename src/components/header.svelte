@@ -67,9 +67,9 @@
 			José Oscátegui
 		</div>
 		<div class='component-header__right'>
-			<a href={$url('./')}>Inicio</a>
-			<a href={$url('./sobre-mi')}>Sobre mi</a>
-			<a href={$url('./proyectos')}>Proyectos</a>
+			<a href={$url('./')} use:prefetch>Inicio</a>
+			<a href={$url('./sobre-mi')} use:prefetch>Sobre mi</a>
+			<a href={$url('./proyectos')} use:prefetch>Proyectos</a>
 		</div>
 	</div>
 </div>
