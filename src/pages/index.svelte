@@ -4,6 +4,7 @@
 	import CardProject from '../components/card-project.svelte';
 	import WorkTogether from '../components/work-together.svelte';
 	import projects from '../api/projects';
+
 </script>
 
 <Hero />

@@ -31,6 +31,6 @@
 	style='object-fit: contain;'
 	width={width}
 	height={height}
-	src=''
+	src='/assets/load-icon.png'
 	use:lazy={{ src: image }}
 />
