@@ -1,23 +1,15 @@
 <script>
 	import CardProject from '../components/card-project.svelte';
+	import projects from '../api/projects';
 </script>
 
 <div class='page-projects'>
 	<div class='page-projects__content'>
-		<h1>Proyectos</h1>
+		<h1>Proyectos <span>(Lab)</span></h1>
 		<div class='page-projects__list'>
-			<CardProject />
-			<CardProject />
-			<CardProject />
-			<CardProject />
-			<CardProject />
-			<CardProject />
-			<CardProject />
-			<CardProject />
-			<CardProject />
-			<CardProject />
-			<CardProject />
-			<CardProject />
+			{ #each projects as project }
+				<CardProject { ...project } />
+			{ /each }
 		</div>
 	</div>
 </div>
@@ -32,6 +24,10 @@
 			font-weight: var(--font-weight-bold);
 			font-size: 48px;
 			margin-bottom: 40px;
+
+			span {
+				font-size: 16px;
+			}
 		}
 
 		&__content {

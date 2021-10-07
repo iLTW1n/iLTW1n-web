@@ -14,7 +14,7 @@
 </Section>
 <Section title='Proyectos' showAll>
 	<div class='page-home__projects'>
-		{ #each projects.slice(0, 5) as project }
+		{ #each projects.slice(0, 2) as project }
 			<CardProject { ...project } />
 		{ /each }
 	</div>
