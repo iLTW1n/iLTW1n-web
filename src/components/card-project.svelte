@@ -6,6 +6,7 @@
 	export let topics = [];
 	export let github = '';
 	export let project = '';
+	export let year = '';
 
 	function gotToGithub() {
 		window.open(github, '_blank')
@@ -15,7 +16,7 @@
 
 <div class='component-project-card'>
 	<div class='component-project-card__title'>
-		{ name }
+		{ name } <span>{ year }</span>
 	</div>
 	<div class='component-project-card__description'>
 		{ description }
@@ -65,6 +66,11 @@
 			font-size: 24px;
 			line-height: 32px;
 			margin-bottom: 16px;
+
+			span {
+				color: var(--color-blue-50);
+				font-size: 14px;
+			}
 		}
 
 		&__description {
