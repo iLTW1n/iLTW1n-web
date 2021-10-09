@@ -87,6 +87,7 @@
 			<a
 				href={url}
 				target='_blank'
+				rel='noreferrer'
 				class='page-about__list-dev__item'
 			>
 				<LazyImage image='/assets/control/{image}' name={name} width='56px' />
@@ -101,6 +102,7 @@
 			<a
 				href={url}
 				target='_blank'
+				rel='noreferrer'
 				class='page-about__list-dev__item {now ? "now" : ""}'
 			>
 				<LazyImage image='/assets/front/{image}' name={name} width='56px' />
@@ -115,6 +117,7 @@
 			<a
 				href={url}
 				target='_blank'
+				rel='noreferrer'
 				class='page-about__list-dev__item {now ? "now" : ""}'
 			>
 				<LazyImage image='/assets/back/{image}' name={name} width='56px' />
@@ -129,6 +132,7 @@
 			<a
 				href={url}
 				target='_blank'
+				rel='noreferrer'
 				class='page-about__list-dev__item {now ? "now" : ""}'
 			>
 				<LazyImage image='/assets/db/{image}' name={name} width='56px' />
@@ -143,6 +147,7 @@
 			<a
 				href={url}
 				target='_blank'
+				rel='noreferrer'
 				class='page-about__list-dev__item'
 			>
 				<LazyImage image='/assets/repo/{image}' name={name} width='56px' />
@@ -157,6 +162,7 @@
 			<a
 				href={url}
 				target='_blank'
+				rel='noreferrer'
 				class='page-about__list-dev__item'
 			>
 				<LazyImage image='/assets/cloud/{image}' name={name} width='56px' />
@@ -171,6 +177,7 @@
 			<a
 				href={url}
 				target='_blank'
+				rel='noreferrer'
 				class='page-about__list-dev__item'
 			>
 				<LazyImage image='/assets/design/{image}' name={name} width='56px' />
