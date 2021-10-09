@@ -32,6 +32,7 @@
 			font-weight: var(--font-weight-bold);
 			font-size: 48px;
 			margin-bottom: 24px;
+			text-align: center;
 		}
 
 		&__description {
@@ -59,6 +60,12 @@
 				width: 24px;
 				min-width: 24px;
 				height: 24px;
+			}
+		}
+
+		@media screen and (min-width: 768px) {
+			&__title {
+
 			}
 		}
 	}

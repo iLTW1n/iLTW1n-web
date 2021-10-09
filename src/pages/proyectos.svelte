@@ -38,8 +38,14 @@
 
 		&__list {
 			display: grid;
-			grid-template-columns: repeat(2, 1fr);
+			grid-template-columns: 1fr;
 			grid-gap: 24px;
+		}
+
+		@media screen and (min-width: 768px) {
+			&__list {
+				grid-template-columns: repeat(2, 1fr);
+			}
 		}
 	}
 </style>

@@ -40,6 +40,7 @@ export default {
 	},
 	plugins: [
 		replace({
+			preventAssignment: true,
 			'process.env.production': production,
 		}),
 		svelte({

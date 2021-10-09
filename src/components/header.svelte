@@ -1,73 +1,14 @@
 <script>
-	import { url, prefetch } from '@roxi/routify';
-	import { writable } from 'svelte/store';
-	const count = writable(0);
+	import { url, prefetch, goto } from '@roxi/routify';
 
-	function handlersText(ctnt) {
-		const theLetters = 'abcdefghijklmnopqrstuvwxyz#%&^+=-'; //You can customize what letters it will cycle through
-		// const ctnt = '.Maker'; // Your text goes here
-		const speed = 40; // ms per frame
-		const increment = 8; // frames per step. Must be > 2
-		const clen = ctnt.length;
-
-		let si = 0;
-		let stri = 0;
-		let block = '';
-		let fixed = '';
-		//Call self x times, whole function wrapped in setTimeout
-		(function rustle(i) {
-			setTimeout(function () {
-				if (--i)rustle (i);
-
-				nextFrame();
-
-				si = si + 1;
-			}, speed);
-		})(clen * increment + 1);
-
-		function nextFrame() {
-			for (let i = 0; i < clen - stri; i++) {
-				//Random number
-				const num = Math.floor(theLetters.length * Math.random());
-				//Get random letter
-				const letter = theLetters.charAt(num);
-				block = block + letter;
-			}
-			if (si === (increment-1)) stri++;
-			if (si === increment){
-				// Add a letter;
-				// every speed * 10 ms
-				fixed = fixed + ctnt.charAt(stri - 1);
-				si = 0;
-			}
-			const element = document.getElementById('change-text-here');
-			element.innerText = fixed + block;
-
-			block = '';
-		}
-	}
-
-	let clear;
-	const words = ['.Maker', '.Dreamer', '.Thinker', 'José Oscátegui'];
-
-	if (process.env.production) {
-		console.log('only productions');
-	}
-
-	$: {
-		clearInterval(clear)
-		clear = setInterval(() => {
-			handlersText(words[$count])
-			count.set($count + 1)
-
-			if (words.length === $count) count.set(0)
-		}, 8000)
+	function goToHome() {
+		$goto('/')
 	}
 </script>
 
 <div class='component-header'>
 	<div class='component-header__content'>
-		<div class='component-header__left' id='change-text-here'>
+		<div class='component-header__left' on:click={goToHome}>
 			José Oscátegui
 		</div>
 		<div class='component-header__right'>
@@ -85,7 +26,8 @@
 
 		&__content {
 			display: flex;
-			justify-content: space-between;
+			flex-direction: column;
+			align-items: center;
 			margin: 0 auto;
 			width: 100%;
 			max-width: var(--max-width-desktop);
@@ -96,6 +38,8 @@
 			font-size: 18px;
 			font-weight: var(--font-weight-bold);
 			color: var(--color-white-10);
+			margin-bottom: 16px;
+			cursor: pointer;
 		}
 
 		&__right {
@@ -116,6 +60,17 @@
 				&:first-child {
 					margin-left: 0;
 				}
+			}
+		}
+
+		@media screen and (min-width: 768px) {
+			&__content {
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			&__left {
+				margin-bottom: 0;
 			}
 		}
 	}
