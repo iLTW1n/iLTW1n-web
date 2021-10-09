@@ -5,6 +5,7 @@ import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import sveltePreprocess from 'svelte-preprocess';
 import scss from 'rollup-plugin-scss';
+import replace from '@rollup/plugin-replace';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -38,6 +39,9 @@ export default {
 		name: 'app',
 	},
 	plugins: [
+		replace({
+			'process.env.production': production,
+		}),
 		svelte({
 			preprocess: sveltePreprocess(),
 			compilerOptions: {

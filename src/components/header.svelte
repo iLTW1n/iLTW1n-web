@@ -50,6 +50,10 @@
 	let clear;
 	const words = ['.Maker', '.Dreamer', '.Thinker', 'José Oscátegui'];
 
+	if (process.env.production) {
+		console.log('only productions');
+	}
+
 	$: {
 		clearInterval(clear)
 		clear = setInterval(() => {

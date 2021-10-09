@@ -22,19 +22,6 @@ body {
   background-color: var(--window-color);
 }
 
-.page-home__articles.svelte-kppdrh {
-  color: var(--color-blue-50);
-  font-weight: var(--font-weight-light);
-  font-size: 18px;
-  line-height: 32px;
-}
-
-.page-home__projects.svelte-kppdrh {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 24px;
-}
-
 .page-projects.svelte-10csyq3.svelte-10csyq3 {
   margin-top: 7rem;
   padding: 0 24px;
@@ -113,6 +100,19 @@ body {
 
 .page-about__list-dev__item.now.svelte-meszng.svelte-meszng {
   opacity: 0.6;
+}
+
+.page-home__articles.svelte-kppdrh {
+  color: var(--color-blue-50);
+  font-weight: var(--font-weight-light);
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.page-home__projects.svelte-kppdrh {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
 }
 
 .component-header.svelte-atubki.svelte-atubki {
