@@ -1,3 +1,4 @@
-<div>
-	ERROR 404
-</div>
+<script>
+	import { goto } from '@roxi/routify'
+	$goto('/')
+</script>

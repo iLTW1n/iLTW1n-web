@@ -3,7 +3,7 @@
 	import { routes } from '../.routify/routes';
 	import { onMount } from "svelte";
 
-	export let scriptSrc;
+	let scriptSrc;
 
 	onMount(() => {
 		if (process.env.production) {
