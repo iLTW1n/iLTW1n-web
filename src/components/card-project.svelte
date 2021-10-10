@@ -7,6 +7,7 @@
 	export let github = '';
 	export let project = '';
 	export let year = '';
+	export let color = '';
 
 	function gotToGithub() {
 		window.open(github, '_blank')
@@ -14,7 +15,7 @@
 
 </script>
 
-<div class='component-project-card'>
+<div class='component-project-card' style='--bar-color: { color }'>
 	<div class='component-project-card__title'>
 		{ name } <span>{ year }</span>
 	</div>
@@ -57,7 +58,7 @@
 			left: 0;
 			width: 8px;
 			height: 100%;
-			background-color: #81F59B;
+			background-color: var(--bar-color);
 		}
 
 		&__title {

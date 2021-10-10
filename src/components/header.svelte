@@ -1,5 +1,5 @@
 <script>
-	import { url, prefetch, goto } from '@roxi/routify';
+	import { url, prefetch, goto, isActive } from '@roxi/routify';
 
 	function goToHome() {
 		$goto('/')
@@ -12,9 +12,9 @@
 			José Oscátegui
 		</div>
 		<div class='component-header__right'>
-			<a href={$url('./')} use:prefetch>Inicio</a>
-			<a href={$url('./sobre-mi')} use:prefetch>Sobre mi</a>
-			<a href={$url('./proyectos')} use:prefetch>Proyectos</a>
+			<a href={$url('./')} use:prefetch class:active={$isActive('/index')}>Inicio</a>
+			<a href={$url('./sobre-mi')} use:prefetch class:active={$isActive('/sobre-mi')}>Sobre mi</a>
+			<a href={$url('./proyectos')} use:prefetch class:active={$isActive('/proyectos')}>Proyectos</a>
 		</div>
 	</div>
 </div>
@@ -52,6 +52,10 @@
 				cursor: pointer;
 				font-weight: var(--font-weight-normal);
 				color: var(--color-white-10);
+
+				&.active {
+					color: var(--primary-color);
+				}
 
 				&:active {
 					color: var(--color-white-10);

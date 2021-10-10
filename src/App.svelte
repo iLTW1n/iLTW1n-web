@@ -7,9 +7,7 @@
 
 	onMount(() => {
 		if (process.env.production) {
-			// console.log('only productions');
-			// scriptSrc = 'https://www.googletagmanager.com/gtag/js?id=G-SQEJPBLJ3E';
-
+			scriptSrc = 'https://www.googletagmanager.com/gtag/js?id=G-SQEJPBLJ3E';
 		}
 	})
 </script>
@@ -17,6 +15,13 @@
 <svelte:head>
 	{#if scriptSrc}
 		<script async src='{scriptSrc}'></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-SQEJPBLJ3E');
+		</script>
 	{/if}
 </svelte:head>
 
