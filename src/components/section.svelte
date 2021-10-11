@@ -6,7 +6,7 @@
 	export let seeMore = '';
 
 	function goToAllProjects() {
-		$goto('/proyectos')
+		$goto('/projects')
 	}
 </script>
 

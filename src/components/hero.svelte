@@ -14,7 +14,7 @@
 		</p>
 
 		<p class='component-hero__go-to-about'>
-			{ $_('hero.knowMore') } <a href={$url('./sobre-mi')}>{ $_('hero.aboutMe') }</a>.
+			{ $_('hero.knowMore') } <a href={$url('./about-me')}>{ $_('hero.aboutMe') }</a>.
 		</p>
 	</div>
 </div>
@@ -35,7 +35,7 @@
 		&__main {
 			color: var(--primary-color);
 			font-weight: var(--font-weight-bold);
-			font-size: 48px;
+			font-size: 32px;
 			text-shadow: 0 0 76px rgba(5, 220, 211, 0.3);
 			margin-bottom: 40px;
 		}
@@ -69,6 +69,12 @@
 					height: 2px;
 					background-color: var(--primary-color);
 				}
+			}
+		}
+
+		@media screen and (min-width: 768px) {
+			&__main {
+				font-size: 48px;
 			}
 		}
 	}

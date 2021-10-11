@@ -11,12 +11,13 @@
 <div class='component-header'>
 	<div class='component-header__content'>
 		<div class='component-header__left' on:click={goToHome}>
-			José Oscátegui
+			<span class='desktop'>José Oscátegui</span>
+			<span class='mobile'>JO</span>
 		</div>
 		<div class='component-header__right'>
 			<a href={$url('./')} use:prefetch class:active={$isActive('/index')}>{ $_('header.home') }</a>
-			<a href={$url('./sobre-mi')} use:prefetch class:active={$isActive('/sobre-mi')}>{ $_('header.aboutMe') }</a>
-			<a href={$url('./proyectos')} use:prefetch class:active={$isActive('/proyectos')}>{ $_('header.projects') }</a>
+			<a href={$url('./about-me')} use:prefetch class:active={$isActive('/about-me')}>{ $_('header.aboutMe') }</a>
+			<a href={$url('./projects')} use:prefetch class:active={$isActive('/projects')}>{ $_('header.projects') }</a>
 			<span>
 				<Languages />
 			</span>
@@ -31,7 +32,7 @@
 
 		&__content {
 			display: flex;
-			flex-direction: column;
+			justify-content: space-between;
 			align-items: center;
 			margin: 0 auto;
 			width: 100%;
@@ -43,8 +44,13 @@
 			font-size: 18px;
 			font-weight: var(--font-weight-bold);
 			color: var(--color-white-10);
-			margin-bottom: 16px;
 			cursor: pointer;
+
+			& > span {
+				&.desktop {
+					display: none;
+				}
+			}
 		}
 
 		&__right {
@@ -81,13 +87,18 @@
 		}
 
 		@media screen and (min-width: 768px) {
-			&__content {
-				flex-direction: row;
-				justify-content: space-between;
-			}
-
 			&__left {
 				margin-bottom: 0;
+
+				& > span {
+					&.mobile {
+						display: none;
+					}
+
+					&.desktop {
+						display: inline-block;
+					}
+				}
 			}
 		}
 	}

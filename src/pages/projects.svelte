@@ -24,7 +24,7 @@
 		h1 {
 			color: var(--color-white-10);
 			font-weight: var(--font-weight-bold);
-			font-size: 48px;
+			font-size: 32px;
 			margin-bottom: 40px;
 
 			span {
@@ -45,6 +45,10 @@
 		}
 
 		@media screen and (min-width: 768px) {
+			h1 {
+				font-size: 48px;
+			}
+
 			&__list {
 				grid-template-columns: repeat(2, 1fr);
 			}
