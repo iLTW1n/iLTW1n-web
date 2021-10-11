@@ -1,11 +1,13 @@
 <script>
+	import { _ } from 'svelte-i18n';
+
 	import CardProject from '../components/card-project.svelte';
 	import projects from '../api/projects';
 </script>
 
 <div class='page-projects'>
 	<div class='page-projects__content'>
-		<h1>Proyectos <span>(Lab)</span></h1>
+		<h1>{ $_('projects.title') } <span>(Lab)</span></h1>
 		<div class='page-projects__list'>
 			{ #each projects as project }
 				<CardProject { ...project } />

@@ -1,4 +1,5 @@
 <script>
+	import { _ } from 'svelte-i18n';
 	import LazyImage from '../components/lazy-image.svelte';
 	import Section from '../components/section.svelte';
 
@@ -60,28 +61,22 @@
 
 <div class='page-about'>
 	<div class='page-about__content'>
-		<h1>Sobre mi</h1>
+		<h1>{ $_('aboutMe.title') }</h1>
 		<div class='page-about__description'>
 			<p>
-				Soy un Desarrollador web Frontend con más de 4 años de experiencia. Me apasionan los <br />
-				códigos de calidad, las mejores practicas, la seguridad y el rendimiento.
+				{@html $_('aboutMe.description') }
 			</p>
 			<p>
-				Trabajo en proyectos frontends complejos con lenguajes y tecnologías nuevas, y también tengo <br />
-				una comprensión decente del desarrollo del lado del servidor. Si bien disfruto experimentar con <br />
-				nuevos frameworks y bibliotecas, entiendo la importancia de centrar la atención en el objetivo <br />
-				final: entregar un producto hermoso y funcional al usuario/cliente.
+				{@html $_('aboutMe.description1') }
 			</p>
 			<p>
-				Veo cada experiencia nueva como una oportunidad para aprender. Mis proyectos favoritos son <br />
-				aquellos que requieren que vaya más allá de mis limites y adquiera nuevas habilidades y <br />
-				conocimientos para tener éxito.
+				{@html $_('aboutMe.description2') }
 			</p>
 		</div>
 	</div>
 </div>
 
-<Section title='Control de Versiones'>
+<Section title="{$_('aboutMe.versionControl') }">
 	<div class='page-about__list-dev'>
 		{#each controls as { name, image, url }}
 			<a
@@ -96,7 +91,7 @@
 	</div>
 </Section>
 
-<Section title='Frontend'>
+<Section title="{$_('aboutMe.frontend') }">
 	<div class='page-about__list-dev'>
 		{#each frontends as { name, image, now, url }}
 			<a
@@ -111,7 +106,7 @@
 	</div>
 </Section>
 
-<Section title='Backend'>
+<Section title="{$_('aboutMe.backend') }">
 	<div class='page-about__list-dev'>
 		{#each backends as { name, image, now, url }}
 			<a
@@ -126,7 +121,7 @@
 	</div>
 </Section>
 
-<Section title='Base de Datos'>
+<Section title="{$_('aboutMe.database') }">
 	<div class='page-about__list-dev'>
 		{#each dbs as { name, image, url, now }}
 			<a
@@ -141,7 +136,7 @@
 	</div>
 </Section>
 
-<Section title='Alojamiento de Repositorios'>
+<Section title="{$_('aboutMe.repositoryHosting') }">
 	<div class='page-about__list-dev'>
 		{#each repos as { name, image, url }}
 			<a
@@ -156,7 +151,7 @@
 	</div>
 </Section>
 
-<Section title='Computación en la Nube'>
+<Section title="{$_('aboutMe.cloudComputing') }">
 	<div class='page-about__list-dev'>
 		{#each clouds as { name, image, url }}
 			<a
@@ -171,7 +166,7 @@
 	</div>
 </Section>
 
-<Section title='Diseño a Código'>
+<Section title="{$_('aboutMe.designToCode') }">
 	<div class='page-about__list-dev'>
 		{#each designs as { name, image, url }}
 			<a

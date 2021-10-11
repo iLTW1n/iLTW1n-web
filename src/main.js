@@ -1,4 +1,5 @@
 import App from './App.svelte';
+import './i18n';
 import './global.scss';
 
 const app = new App({

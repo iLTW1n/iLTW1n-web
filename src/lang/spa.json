@@ -1,0 +1,50 @@
+{
+  "header": {
+    "home": "Inicio",
+    "aboutMe": "Sobre mí",
+    "projects": "Proyectos"
+  },
+  "hero": {
+    "title": "Soy José, un Desarrollador Frontend de Lima, Perú.",
+    "description": "Tengo 22 años, un desarrollador de software autodidacta con una gran <br /> pasión por la codificación, rápido de aprender, optimista, trabajador y <br /> fácil de adaptarme.",
+    "knowMore": "Puedes leer más",
+    "aboutMe": "sobre mí"
+  },
+  "sectionArticles": {
+    "title": "Artículos",
+    "placeholder": "Pronto ..."
+  },
+  "sectionProjects": {
+    "title": "Proyectos",
+    "seeMore": "Todo los proyectos"
+  },
+  "cardProject": {
+    "github": "Ver en GitHub",
+    "project": "Ver Proyecto"
+  },
+  "workTogether": {
+    "title": "¿En que estas trabajando?",
+    "description": "Si quieres trabajar conmigo, solo envíame un correo <br /> electrónico y estaré listo para hacerlo realidad.\n\n"
+  },
+  "footer": {
+    "develop": "Desarrollado por José Oscátegui.",
+    "build": "Construido con",
+    "hosted": "Alojado en"
+  },
+  "aboutMe": {
+    "title": "Sobre mí",
+    "description": "Soy un Desarrollador web Frontend con más de 4 años de experiencia. Me apasionan los <br /> códigos de calidad, las mejores practicas, la seguridad y el rendimiento.",
+    "description1": "Trabajo en proyectos frontends complejos con lenguajes y tecnologías nuevas, y también tengo <br /> una comprensión decente del desarrollo del lado del servidor. Si bien disfruto experimentar con <br /> nuevos frameworks y bibliotecas, entiendo la importancia de centrar la atención en el objetivo <br /> final: entregar un producto hermoso y funcional al usuario/cliente.",
+    "description2": "Veo cada experiencia nueva como una oportunidad para aprender. Mis proyectos favoritos son <br /> aquellos que requieren que vaya más allá de mis limites y adquiera nuevas habilidades y <br /> conocimientos para tener éxito.",
+    "versionControl": "Control de Versiones",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Base de Datos",
+    "repositoryHosting": "Alojamiento de Repositorios",
+    "cloudComputing": "Computación en la Nube",
+    "designToCode": "Diseño a Código"
+  },
+  "projects": {
+    "title": "Proyectos"
+  }
+}

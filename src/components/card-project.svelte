@@ -1,6 +1,5 @@
 <script>
-	import { goto } from '@roxi/routify';
-
+	import { _ } from 'svelte-i18n'
 	export let name = '';
 	export let description = '';
 	export let topics = [];
@@ -30,12 +29,12 @@
 	<div class='component-project-card__links'>
 		<div on:click={gotToGithub}>
 			<img src='/assets/code.svg' alt='code' />
-			<span>Ver en GitHub</span>
+			<span>{ $_('cardProject.github') }</span>
 		</div>
 		{ #if project }
 			<div>
 				<img src='/assets/url.svg' alt='url' />
-				<span>Ver Proyecto</span>
+				<span>{ $_('cardProject.project') }</span>
 			</div>
 		{ /if }
 	</div>

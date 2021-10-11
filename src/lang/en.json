@@ -1,0 +1,50 @@
+{
+  "header": {
+    "home": "Home",
+    "aboutMe": "About me",
+    "projects": "Projects"
+  },
+  "hero": {
+    "title": "I'm José, a Frontend Developer from Lima, Peru.",
+    "description": "I am 22 years old, a self-taught software developer with a great passion for coding, <br />  quick to learn, optimistic, hard-working, and easy to adapt.",
+    "knowMore": "You can read more about me",
+    "aboutMe": "about me"
+  },
+  "sectionArticles": {
+    "title": "Articles",
+    "placeholder": "Soon ..."
+  },
+  "sectionProjects": {
+    "title": "Projects",
+    "seeMore": "All projects"
+  },
+  "cardProject": {
+    "github": "View on GitHub",
+    "project": "See Project"
+  },
+  "workTogether": {
+    "title": "What are you working on?",
+    "description": "If you want to work with me, just send me an email <br /> electronic and I'll be ready to make it happen."
+  },
+  "footer": {
+    "develop": "Developed by José Oscátegui.",
+    "build": "Built with",
+    "hosted": "Hosted in"
+  },
+  "aboutMe": {
+    "title": "About me",
+    "description": "I am a Frontend Web Developer with more than 4 years of experience. I am passionate about <br /> quality codes, best practices, safety and performance.",
+    "description1": "I work on complex frontend projects with new languages and technologies, and also have a decent understanding of server-side development. While I enjoy experimenting with <br /> new frameworks and libraries, I understand the importance of focusing attention on the final <br /> goal: to deliver a beautiful and functional product to the user/customer.",
+    "description2": "I see every new experience as an opportunity to learn. My favorite projects are <br /> those that require me to go beyond my limits and acquire new skills and <br /> knowledge to be successful.",
+    "versionControl": "Version Control",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Database",
+    "repositoryHosting": "Repository Hosting",
+    "cloudComputing": "Cloud Computing",
+    "designToCode": "Design to Code"
+  },
+  "projects": {
+    "title": "Projects"
+  }
+}

@@ -1,4 +1,6 @@
 <script>
+	import { _ } from 'svelte-i18n'
+
 	function goToEmail() {
 		window.location.href = 'mailto:jose.osk01@gmail.com';
 	}
@@ -6,11 +8,10 @@
 
 <div class='component-work-together'>
 	<h2 class='component-work-together__title'>
-		¿En que estas trabajando?
+		{ $_('workTogether.title') }
 	</h2>
 	<p class='component-work-together__description'>
-		Si quieres trabajar conmigo, solo envíame un correo <br />
-		electrónico y estaré listo para hacerlo realidad.
+		{@html $_('workTogether.description') }
 	</p>
 	<div class='component-work-together__chat' on:click={goToEmail}>
 		<img src='/assets/chat.svg' alt='chat' />

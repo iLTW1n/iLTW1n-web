@@ -1,22 +1,20 @@
 <script>
 	import { url } from '@roxi/routify';
+	import { _ } from 'svelte-i18n'
 </script>
 
 <div class='component-hero'>
 	<div class='component-hero__content'>
 		<div class='component-hero__main'>
-			Soy José, un Desarrollador
-			Frontend de Lima, Perú.
+			{ $_('hero.title') }
 		</div>
 
 		<p class='component-hero__description'>
-			Tengo 22 años, un desarrollador de software autodidacta con una gran <br />
-			pasión por la codificación, rápido de aprender, optimista, trabajador y <br />
-			fácil de adaptarme.
+			{@html $_('hero.description') }
 		</p>
 
 		<p class='component-hero__go-to-about'>
-			Puedes leer más <a href={$url('./sobre-mi')}>sobre mí</a>.
+			{ $_('hero.knowMore') } <a href={$url('./sobre-mi')}>{ $_('hero.aboutMe') }</a>.
 		</p>
 	</div>
 </div>

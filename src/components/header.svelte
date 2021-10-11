@@ -1,5 +1,7 @@
 <script>
 	import { url, prefetch, goto, isActive } from '@roxi/routify';
+	import { _ } from 'svelte-i18n'
+	import Languages from './languages.svelte';
 
 	function goToHome() {
 		$goto('/')
@@ -12,9 +14,12 @@
 			José Oscátegui
 		</div>
 		<div class='component-header__right'>
-			<a href={$url('./')} use:prefetch class:active={$isActive('/index')}>Inicio</a>
-			<a href={$url('./sobre-mi')} use:prefetch class:active={$isActive('/sobre-mi')}>Sobre mi</a>
-			<a href={$url('./proyectos')} use:prefetch class:active={$isActive('/proyectos')}>Proyectos</a>
+			<a href={$url('./')} use:prefetch class:active={$isActive('/index')}>{ $_('header.home') }</a>
+			<a href={$url('./sobre-mi')} use:prefetch class:active={$isActive('/sobre-mi')}>{ $_('header.aboutMe') }</a>
+			<a href={$url('./proyectos')} use:prefetch class:active={$isActive('/proyectos')}>{ $_('header.projects') }</a>
+			<span>
+				<Languages />
+			</span>
 		</div>
 	</div>
 </div>
@@ -64,6 +69,14 @@
 				&:first-child {
 					margin-left: 0;
 				}
+			}
+
+			span {
+				margin-left: 24px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 24px;
 			}
 		}
 

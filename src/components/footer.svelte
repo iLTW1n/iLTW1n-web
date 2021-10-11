@@ -1,14 +1,15 @@
 <script>
+	import { _ } from 'svelte-i18n';
 	import LazyImage from './lazy-image.svelte';
 </script>
 
 <div class='component-header'>
 	<div class='component-header__content'>
 		<div class='component-header__left'>
-			<p>Desarrollado por José Oscátegui.</p>
+			<p>{ $_('footer.develop') }</p>
 			<p>
-				Construido con <span>Svelte <LazyImage image='/assets/dev-svelte.svg' name='svelte' width='16px' height='16px' /></span>.
-				Alojado en <span>Netlify <LazyImage image='/assets/dev-netlify.svg' name='netlify' width='16px' height='16px' /></span>.
+				{ $_('footer.build') } <span>Svelte <LazyImage image='/assets/dev-svelte.svg' name='svelte' width='16px' height='16px' /></span>.
+				{ $_('footer.hosted') } <span>Netlify <LazyImage image='/assets/dev-netlify.svg' name='netlify' width='16px' height='16px' /></span>.
 			</p>
 		</div>
 		<div class='component-header__right'>

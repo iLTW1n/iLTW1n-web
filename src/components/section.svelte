@@ -3,7 +3,7 @@
 
 	export let title;
 	export let description = '';
-	export let showAll = false;
+	export let seeMore = '';
 
 	function goToAllProjects() {
 		$goto('/proyectos')
@@ -19,9 +19,9 @@
 					<span>{ description }</span>
 				{ /if }
 			</div>
-			{ #if showAll }
+			{ #if seeMore }
 				<div class='component-section__all-content' on:click={goToAllProjects}>
-					Todo los proyectos
+					{ seeMore }
 					<img src='/assets/arrow-right.svg' alt='arrow-right' />
 				</div>
 			{ /if }
