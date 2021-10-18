@@ -42,7 +42,8 @@
     "database": "Database",
     "repositoryHosting": "Repository Hosting",
     "cloudComputing": "Cloud Computing",
-    "designToCode": "Design to Code"
+    "designToCode": "Design to Code",
+    "projectManagement": "Project Management"
   },
   "projects": {
     "title": "Projects"

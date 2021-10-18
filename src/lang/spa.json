@@ -42,7 +42,8 @@
     "database": "Base de Datos",
     "repositoryHosting": "Alojamiento de Repositorios",
     "cloudComputing": "Computación en la Nube",
-    "designToCode": "Diseño a Código"
+    "designToCode": "Diseño a Código",
+    "projectManagement": "Administración de Proyectos"
   },
   "projects": {
     "title": "Proyectos"

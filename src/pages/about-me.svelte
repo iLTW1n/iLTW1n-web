@@ -57,6 +57,10 @@
 		{ name: 'invision', image: 'dev-invision.svg', url: 'https://www.invisionapp.com/' },
 		{ name: 'avocode', image: 'dev-avocode.svg', url: 'https://avocode.com/' },
 	]
+	const managements = [
+		{ name: 'jira', image: 'dev-jira.svg', url: 'https://www.atlassian.com/software/jira' },
+		{ name: 'trello', image: 'dev-trello.svg', url: 'https://trello.com' },
+	]
 </script>
 
 <div class='page-about'>
@@ -176,6 +180,21 @@
 				class='page-about__list-dev__item'
 			>
 				<LazyImage image='/assets/design/{image}' name={name} width='56px' />
+			</a>
+		{/each}
+	</div>
+</Section>
+
+<Section title="{$_('aboutMe.projectManagement') }">
+	<div class='page-about__list-dev'>
+		{#each managements as { name, image, url }}
+			<a
+				href={url}
+				target='_blank'
+				rel='noreferrer'
+				class='page-about__list-dev__item'
+			>
+				<LazyImage image='/assets/management/{image}' name={name} width='56px' />
 			</a>
 		{/each}
 	</div>
